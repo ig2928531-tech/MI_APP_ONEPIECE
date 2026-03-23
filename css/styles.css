@@ -4,6 +4,8 @@ body {
   background-image: url('../img/paisaje1.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: rgb(39, 38, 38);
   text-align: center;
 }
