@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('img/paisaje1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.pantalla {
+  display: none;
+  padding: 20px;
+}
+
+.pantalla.activa {
+  display: block;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff00ea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff00aa;
+}
+
+img {
+  max-width: 300px;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 15px 0;
+}
