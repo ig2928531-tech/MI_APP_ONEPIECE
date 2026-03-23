@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('img/paisaje1.jpg');
+  background-image: url('../img/paisaje1.jpg');
   background-size: cover;
   background-position: center;
   color: rgb(39, 38, 38);
