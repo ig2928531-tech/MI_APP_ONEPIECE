@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>App One Piece</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Pantalla 1: Menú principal -->
+  <div id="pantalla1" class="pantalla activa">
+    <h1>App One Piece</h1>
+    <p>Alumno: Isela Gomez Peñaloza</p>
+    <button onclick="mostrarPantalla('pantalla2')">Personaje Favorito</button>
+    <button onclick="mostrarPantalla('pantalla3')">Isla Favorita</button>
+    <button onclick="mostrarPantalla('pantalla4')">Tripulación Favorita</button>
+  </div>
+
+  <!-- Pantalla 2 -->
+  <div id="pantalla2" class="pantalla">
+    <h2>Luffy</h2>
+    <img src="img/luffy.jpeg" alt="Luffy">
+    <p>El protagonista que sueña con ser el Rey de los Piratas, es un chico muy alegre al cual le importan mucho sus compañeros.</p>
+    <button onclick="mostrarPantalla('pantalla1')">Regresar</button>
+    <button onclick="mostrarPantalla('pantalla3')">Isla Favorita</button>
+    <button onclick="mostrarPantalla('pantalla4')">Tripulación Favorita</button>
+  </div>
+
+  <!-- Pantalla 3 -->
+  <div id="pantalla3" class="pantalla">
+    <h2>Isla de Wano</h2>
+    <img src="img/paisaje2.jpg" alt="Skypiea">
+    <p>Una isla aislada del mundo exterior, la cual es la tierra de los samurais.</p>
+    <button onclick="mostrarPantalla('pantalla1')">Regresar</button>
+    <button onclick="mostrarPantalla('pantalla2')">Personaje Favorito</button>
+    <button onclick="mostrarPantalla('pantalla4')">Tripulación Favorita</button>
+  </div>
+
+  <!-- Pantalla 4 -->
+  <div id="pantalla4" class="pantalla">
+    <h2>Tripulación de Sombrero de Paja</h2>
+    <img src="img/muwiguaras.webp" alt="Tripulación">
+    <p>La tripulación más leal y divertida del Grand Line, está compuesta por Luffy, Zoro, Nami, Usopp, Sanji, Cgopper, Robin, Franky, Brook y Jinbe.</p>
+    <button onclick="mostrarPantalla('pantalla1')">Regresar</button>
+    <button onclick="mostrarPantalla('pantalla2')">Personaje Favorito</button>
+    <button onclick="mostrarPantalla('pantalla3')">Isla Favorita</button>
+  </div>
+
+  <script>
+    function mostrarPantalla(id) {
+      document.querySelectorAll('.pantalla').forEach(p => p.classList.remove('activa'));
+      document.getElementById(id).classList.add('activa');
+    }
+  </script>
+</body>
+</html>
